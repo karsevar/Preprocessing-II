@@ -1,1 +1,19 @@
 // Navigation Styles here
+.static-nav {
+    width: 100%;
+    height: 60px;
+
+    .flexDisplay(row, space-between, center);
+
+    nav {
+        width: 40%;
+        height: 100%;
+        .flexDisplay(row, space-around, center);
+
+        a {
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: @nav-color;
+        }
+    }
+}

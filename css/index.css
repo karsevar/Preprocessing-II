@@ -168,6 +168,27 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.static-nav {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.static-nav nav {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.static-nav nav a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: black;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -180,6 +201,7 @@ img {
   padding: 20px;
 }
 .home .content-section {
+  border-top: 2px dashed #C0C0C0;
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
