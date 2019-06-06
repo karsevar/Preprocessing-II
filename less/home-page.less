@@ -1,8 +1,15 @@
+/* Will need to look into how to create this border */
+/*
+.phantom-border {
+  width: 100vw;
+  margin: 0 auto;
+  border-bottom: 2px dashed @navigation-border;
+}
+*/
+
 .home {
 
   .content-section {
-    //Border addition
-    border-top: 2px dashed @navigation-border;
 
     margin: 30px 0;
     display: flex;
@@ -59,6 +66,13 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      /* button code */
+      .btn {
+        button {
+          .buttonStyle();
+        }
+      }
     }
   }
 }// home

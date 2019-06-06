@@ -1,9 +1,12 @@
 // Navigation Styles here
 .static-nav {
     width: 100%;
-    height: 60px;
+    height: 90px;
 
     .flexDisplay(row, space-between, center);
+
+    /* nav border patch */
+    border-bottom: 2px dashed @navigation-border;
 
     nav {
         width: 40%;
@@ -14,6 +17,22 @@
             text-decoration: none;
             font-size: 1.6rem;
             color: @nav-color;
+        }
+    }
+}
+
+.header-content {
+    width: 100%;
+    height: 35%;
+    padding-bottom: 5px; 
+
+    border-bottom: 2px dashed @navigation-border;
+
+    .flexDisplay(column, space-around, flex-end);
+
+    .header-text {
+        h2 {
+            padding-top: 20px;
         }
     }
 }

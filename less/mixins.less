@@ -1,1 +1,19 @@
 // Mixins in here
+//mixins and parametric mixins
+.flexDisplay(@direction, @justify, @align) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.buttonStyle {
+    width: 80%;
+    height: 40px;
+
+    background: darken(@button-bg, 10%);
+    border-radius: 10px;
+    color: @main-bg;
+    font-size: 1.6rem;
+    border: none;
+}

@@ -1,3 +1,12 @@
+.buttonStyle {
+  width: 80%;
+  height: 40px;
+  background: #117a8b;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  border: none;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -170,11 +179,13 @@ img {
 }
 .static-nav {
   width: 100%;
-  height: 60px;
+  height: 90px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  /* nav border patch */
+  border-bottom: 2px dashed #C0C0C0;
 }
 .static-nav nav {
   width: 40%;
@@ -189,6 +200,19 @@ img {
   font-size: 1.6rem;
   color: black;
 }
+.header-content {
+  width: 100%;
+  height: 35%;
+  padding-bottom: 5px;
+  border-bottom: 2px dashed #C0C0C0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.header-content .header-text h2 {
+  padding-top: 20px;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -200,8 +224,15 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+/* Will need to look into how to create this border */
+/*
+.phantom-border {
+  width: 100vw;
+  margin: 0 auto;
+  border-bottom: 2px dashed @navigation-border;
+}
+*/
 .home .content-section {
-  border-top: 2px dashed #C0C0C0;
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
@@ -246,4 +277,14 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+  /* button code */
+}
+.home .content-pick .destination .btn button {
+  width: 80%;
+  height: 40px;
+  background: #117a8b;
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  border: none;
 }
